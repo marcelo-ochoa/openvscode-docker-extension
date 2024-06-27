@@ -11,4 +11,5 @@ sudo apt-get update && sudo apt-get install -y google-cloud-cli google-cloud-cli
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
 sudo mv kubectl /usr/local/bin
 sudo chmod a+rx /usr/local/bin/kubectl
-openvscode-server --force --install-extension=redhat.vscode-yaml --install-extension=ms-azuretools.vscode-docker --install-extension=yzhang.markdown-all-in-one --install-extension=ms-kubernetes-tools.vscode-kubernetes-tools
+echo "Add Kubectl extension by running in OpenVS Code Terminal"
+echo "  openvscode-server --force --install-extension=redhat.vscode-yaml --install-extension=ms-azuretools.vscode-docker --install-extension=yzhang.markdown-all-in-one --install-extension=ms-kubernetes-tools.vscode-kubernetes-tools"

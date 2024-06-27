@@ -18,3 +18,4 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt-get update
 sudo apt-get install nodejs -y
 sudo npm install -g express-generator
+echo "No extra extensions are required"

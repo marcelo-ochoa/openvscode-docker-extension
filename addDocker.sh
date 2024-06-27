@@ -15,4 +15,5 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 sudo apt-get install -y docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-openvscode-server --force --install-extension=redhat.vscode-yaml --install-extension=ms-azuretools.vscode-docker --install-extension=yzhang.markdown-all-in-one
+echo "Add Docker extension by running in OpenVS Code Terminal"
+echo "  openvscode-server --force --install-extension=redhat.vscode-yaml --install-extension=ms-azuretools.vscode-docker --install-extension=yzhang.markdown-all-in-one"
