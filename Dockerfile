@@ -3,8 +3,9 @@ WORKDIR /app/client
 # cache packages in layer
 COPY client/package.json /app/client/package.json
 COPY client/package-lock.json /app/client/package-lock.json
-RUN npm ci
-
+RUN --mount=type=cache,target=/usr/src/app/.npm \
+    npm set cache /usr/src/app/.npm && \
+    npm ci
 # install
 COPY client /app/client
 RUN npm run build
