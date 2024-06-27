@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  openvscode-docker-extension:
+    image: ${DESKTOP_PLUGIN_IMAGE}
+  coder:
+    image: gitpod/openvscode-server:1.90.1
+    command: --auth none --verbose --app-name VS Code Web Docker Desktop Extension
+    container_name: openvscode_embedded_dd_vm
+    restart: unless-stopped
+    volumes:
+      - openvscode_data:/home/workspace
+      - /var/run/docker.sock.raw:/var/run/docker.sock
+    environment:
+      TZ: America/Argentina/Buenos_Aires
+    ports:
+      - 57081:3000
+volumes:
+  openvscode_data:

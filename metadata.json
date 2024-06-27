@@ -1,0 +1,17 @@
+{
+  "icon": "coder.svg",
+  "vm": {
+    "composefile": "docker-compose.yml",
+    "exposes": { "socket": "openvscode-docker-extension.sock" }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "OpenVS Code Web",
+      "root": "/ui",
+      "src": "index.html",
+      "backend": {
+        "socket": "openvscode-docker-extension.sock"
+      }
+    }
+  }
+}
