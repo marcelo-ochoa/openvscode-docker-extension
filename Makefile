@@ -2,7 +2,7 @@ all: clean extension install
 
 ORG=mochoa
 openvscode_IMAGE_NAME=gitpod/openvscode-server
-VERSION=1.90
+VERSION=1.105
 MINOR=1
 IMAGE_NAME=$(ORG)/openvscode-docker-extension
 TAGGED_IMAGE_NAME=$(IMAGE_NAME):$(VERSION).${MINOR}

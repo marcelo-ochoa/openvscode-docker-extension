@@ -26,4 +26,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: mochoa/openvscode-docker-extension:1.90.1
+          tags: mochoa/openvscode-docker-extension:1.105.1
